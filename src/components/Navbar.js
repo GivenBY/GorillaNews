@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
   return (
@@ -6,25 +7,25 @@ const Navbar = () => {
       <nav>
         <ul className="navbar-items">
           <li className="navbar-list">
-            <a href="/">General</a>
+            <Link to="/">General</Link>
           </li>
           <li className="navbar-list">
-            <a href="/business">Business</a>
+            <Link to="/business">Business</Link>
           </li>
           <li className="navbar-list">
-            <a href="/entertainment">Entertainment</a>
+            <Link to="/entertainment">Entertainment</Link>
           </li>
           <li className="navbar-list">
-            <a href="/health">Health</a>
+            <Link to="/health">Health</Link>
           </li>
           <li className="navbar-list">
-            <a href="/science">Science</a>
+            <Link to="/science">Science</Link>
           </li>
           <li className="navbar-list">
-            <a href="/sports">Sports</a>
+            <Link to="/sports">Sports</Link>
           </li>
           <li className="navbar-list">
-            <a href="/technology">Technology</a>
+            <Link to="/technology">Technology</Link>
           </li>
         </ul>
       </nav>
