@@ -14,27 +14,38 @@ GorillaNews is a React web application that displays news articles sourced from 
 To run GorillaNews locally on your machine, follow these steps:
 
 1. **Clone the Repository:**
-   ```bash
+
+   ```
    git clone https://github.com/your-username/GorillaNews.git
    ```
+
 2. **Navigate to the Project Directory:**
+
    ```
    cd GorillaNews
    ```
+
 3. **Create a .env.local File:**
    Create a file named .env.local in the project directory and add your NewsAPI key:
+
    ```
    REACT_APP_NEWS_API="your_api_key_here"
    ```
+
    Replace "your_api_key_here" with your actual NewsAPI key. This step is necessary to enable data retrieval.
+
 4. **Install Dependencies:**
+
    ```
    npm install
    ```
+
 5. **Start the Development Server:**
+
    ```
    npm start
    ```
+
    The application should now be running on http://localhost:3000.
 
 ## Usage
