@@ -16,7 +16,7 @@ To run GorillaNews locally on your machine, follow these steps:
 1. **Clone the Repository:**
 
    ```
-   git clone https://github.com/your-username/GorillaNews.git
+   git clone https://github.com/GivenBY/GorillaNews.git
    ```
 
 2. **Navigate to the Project Directory:**
