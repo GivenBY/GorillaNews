@@ -32,7 +32,7 @@ const News = (props) => {
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)} - GorillaNews`;
     updateNews();
-  }, []);
+  }, [props.category, updateNews]);
 
   const fetchMoreData = async () => {
     const url = `https://newsapi.org/v2/top-headlines?country=${
