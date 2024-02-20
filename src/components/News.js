@@ -27,7 +27,14 @@ const News = (props) => {
     setTotalResults(parsedData.totalResults);
     setLoading(false);
     props.setProgress(100);
-  }, []);
+  }, [
+    page,
+    props.country,
+    props.category,
+    props.apiKey,
+    props.pageSize,
+    props.setProgress,
+  ]);
 
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)} - GorillaNews`;
