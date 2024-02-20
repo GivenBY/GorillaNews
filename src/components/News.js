@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Newsitem from "./Newsitem";
 import "./News.css";
 import Spinner from "./Spinner";
