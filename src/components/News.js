@@ -15,7 +15,7 @@ const News = (props) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
 
-  const updateNews = async () => {
+  const updateNews = useCallback(async () => {
     props.setProgress(10);
     const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
     setLoading(true);
@@ -27,7 +27,7 @@ const News = (props) => {
     setTotalResults(parsedData.totalResults);
     setLoading(false);
     props.setProgress(100);
-  };
+  }, []);
 
   useEffect(() => {
     document.title = `${capitalizeFirstLetter(props.category)} - GorillaNews`;
